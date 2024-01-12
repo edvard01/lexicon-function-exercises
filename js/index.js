@@ -107,3 +107,19 @@ function sumOfTen(arr) {
 let sumArray = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
 console.log(sumOfTen(sumArray));
+
+let person = {
+  name: "Penny",
+  age: 21,
+  city: "Edinburgh",
+  skills: ["Cook", "Coding", "Flying", "Algebra", "Data Analyst"],
+};
+
+function listSkillset(person) {
+  console.log(`${person.name}'s skills:`);
+  person.skills.forEach((skill) => {
+    console.log(skill);
+  });
+}
+
+listSkillset(person);
